@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(0, 0%, 96%);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    width: 580px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+}
+
+#result {
+    width: 280px;
+    background-color: hsl(252, 100%, 67%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 50px;
+    border-radius: 10px;
+    color: white;
+}
+
+.your-result {
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 42px;
+}
+
+.circle {
+    background: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    margin: 30px;
+    padding: 30px;
+    border-radius: 50%;
+    width: 70%;
+}
+
+.sp {
+    font-size: small;
+    font-weight: 100;
+}
+
+.sp, .your-result {
+    color: hsl(241, 100%, 89%);
+}
+
+#great {
+    font-weight: 500;
+    color: white;
+    margin-bottom: 10px;
+}
+
+#p {
+    margin-bottom: 10px;
+    line-height: 16px;
+}
+
+
+
+#summary {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+#h-sum {
+    position: relative;
+    margin-left: -100px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+button  {
+    width: 100%;
+    padding: 10px;
+    margin: 20px 10px;
+    background-color: hsl(224, 30%, 27%);
+    border-radius: 20px;
+    color: white;
+}
+
+.order-p {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+}
+
+.order {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 10px;
+    padding: 10px;
+    background-color: hsl(0, 0%, 96%);
+    width: 100%;
+    border-radius: 7px;
+}
+
+#reaction {
+    color: hsl(0, 100%, 67%);
+    font-weight: 700;
+}
+
+.reaction {
+    background-color: hsl(0, 47%, 96%);
+}
+
+#memory {
+    color: hsl(39, 100%, 56%);
+    font-weight: 700;
+}
+
+.memory {
+    background-color: hsl(40, 67%, 96%);
+}
+
+#verbal {
+    color: hsl(166, 100%, 37%);
+    font-weight: 700;
+}
+
+.verbal {
+    background-color: hsl(166, 35%, 93%);
+}
+
+#visual {
+    color: hsl(234, 85%, 45%);
+    font-weight: 700;
+}
+
+.visual {
+    background-color: hsl(235, 68%, 96%);
+}
+
+#h-sum, .num1 {
+    color: hsl(224, 30%, 27%);
+    font-weight: 700;
+}
+
+.num2 {
+    color: hsl(223, 23%, 78%);
+}
+
+@media (max-width: 768px) {
+    main {
+        display: block;
+        width: 300px;
+        margin: 100px;
+    }
+
+    #result {
+        width: 300px;
+        border-radius: 0 0 20px 20px;
+    }
+
+    #h-sum {
+        margin-left: -170px;
+    }
+}
